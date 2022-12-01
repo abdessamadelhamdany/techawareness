@@ -1,0 +1,30 @@
+{
+  "name": "abdessamad/tech-awareness",
+  "description": "A basic example for unit tests with codeception for tech-awareness",
+  "type": "project",
+  "require-dev": {
+    "phpunit/phpunit": "9.5.4",
+    "mockery/mockery": "1.4.3",
+    "php-webdriver/webdriver": "1.9.0",
+    "codeception/codeception": "^4.1",
+    "codeception/module-webdriver": "^1.2",
+    "codeception/module-asserts": "^1.3",
+    "lucatume/function-mocker": "1.3.8"
+  },
+  "license": "Private",
+  "autoload": {
+    "files": [
+      "src/inclulde.php"
+    ],
+    "psr-4": {
+      "Techawareness\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Abdessamad El Hamdany",
+      "email": "abdessamadelhamdany@hotmail.com"
+    }
+  ],
+  "require": {}
+}
