@@ -1,7 +1,5 @@
 <?php
 
-namespace Techawareness\Assertions;
-
 function fn_even(int $num): bool
 {
     return $num % 2 === 0;
