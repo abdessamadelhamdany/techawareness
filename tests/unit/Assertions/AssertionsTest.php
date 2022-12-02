@@ -2,6 +2,14 @@
 
 namespace Tests\Unit\Assertions;
 
+use function Techawareness\Assertions\{
+    fn_add,
+    fn_array_push,
+    fn_division,
+    fn_even,
+    fn_push
+};
+
 class AssertionsTest extends \Tests\Unit\ABaseUnitTest
 {
     public function testFnEven()

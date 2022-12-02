@@ -1,5 +1,7 @@
 <?php
 
+namespace Techawareness\Mocking;
+
 define('LANG', 'en');
 
 function fn_is_long_name(string $name, int $long_length): bool

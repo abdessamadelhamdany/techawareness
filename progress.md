@@ -1,6 +1,3 @@
-3. FunctionMocker with Examples
-   1. Simple function (Doesn’t need a provider)
-   2. Complex function (Has multiple use cases)
 4. Mockery with Examples
    1. Simple method (Doesn’t need a provider)
    2. SemiComplex method (Has multiple cases, but uses only other methods as its dependencies)

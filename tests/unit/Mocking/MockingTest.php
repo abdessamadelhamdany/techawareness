@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Unit\FunctionMocker;
+namespace Tests\Unit\Mocking;
 
 use tad\FunctionMocker\FunctionMocker;
 
-require_once 'fn.function-mocker.php';
+use function Techawareness\Mocking\{fn_greeting, fn_is_long_name, fn_print_message};
 
-class FunctionMockerTest extends \Tests\Unit\ABaseUnitTest
+class MockingTest extends \Tests\Unit\ABaseUnitTest
 {
     public function testFnIsLongName()
     {
@@ -35,15 +35,15 @@ class FunctionMockerTest extends \Tests\Unit\ABaseUnitTest
     {
         $name = 'Smith';
 
-        $mock_fn_print_message = FunctionMocker::replace('fn_print_message');
+        $mock_fn_print_message = FunctionMocker::replace('Techawareness\Mocking\fn_print_message');
         fn_greeting($name);
         $mock_fn_print_message->wasCalledWithOnce(['Hello, ', $name]);
 
-        $mock_fn_print_message = FunctionMocker::replace('fn_print_message');
+        $mock_fn_print_message = FunctionMocker::replace('Techawareness\Mocking\fn_print_message');
         fn_greeting($name, 'fr');
         $mock_fn_print_message->wasCalledWithOnce(['Salut, ', $name]);
 
-        $mock_fn_print_message = FunctionMocker::replace('fn_print_message');
+        $mock_fn_print_message = FunctionMocker::replace('Techawareness\Mocking\fn_print_message');
         fn_greeting($name, 'xyz');
         $mock_fn_print_message->wasCalledWithOnce(['No greeting to you sir!']);
     }
