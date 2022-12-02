@@ -6,7 +6,7 @@ use tad\FunctionMocker\FunctionMocker;
 
 use function Techawareness\Mocking\{fn_greeting, fn_is_long_name, fn_print_message};
 
-class MockingTest extends \Tests\Unit\ABaseUnitTest
+class FunctionsTest extends \Tests\Unit\ABaseUnitTest
 {
     public function testFnIsLongName()
     {
