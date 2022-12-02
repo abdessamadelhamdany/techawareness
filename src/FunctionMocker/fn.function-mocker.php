@@ -13,7 +13,7 @@ function fn_is_long_name(string $name, int $long_length): bool
 function fn_print_message(string ...$messages): void
 {
     foreach ($messages as $message) {
-        echo $message;
+        var_dump($message);
     }
 }
 
@@ -29,15 +29,4 @@ function fn_greeting(string $name, $lang = LANG): void
         default:
             fn_print_message('No greeting to you sir!');
     }
-}
-
-/**
- * External function, and we trust it to works as expected
- */
-function db_get_row(string $sql): array
-{
-    return [
-        'select id, name, age from ?:users where id=3' => ['id' => 3, 'name' => 'John', 'age' => 23],
-        'select id, name, age from ?:users where id=8' => ['id' => 8, 'name' => 'Tony', 'age' => 42],
-    ][$sql];
 }
