@@ -23,7 +23,7 @@ function fn_array_push(int $item, array $array = []): array
 
 function fn_division(float $x, float $y): float
 {
-    if ($y === 0) {
+    if ($y === 0.0) {
         throw new \Exception('Operation denied');
     }
 
