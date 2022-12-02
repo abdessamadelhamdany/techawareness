@@ -13,11 +13,11 @@
   },
   "license": "Private",
   "autoload": {
-    "files": [
-      "src/inclulde.php"
-    ],
     "psr-4": {
       "Techawareness\\": "src/",
+      "Tests\\Functional\\": "tests/functional",
+      "Tests\\Includes\\": "tests/_includes",
+      "Tests\\Support\\": "tests/_support",
       "Tests\\Unit\\": "tests/unit"
     }
   },

@@ -1,8 +1,8 @@
 <?php
 
-namespace Assertions;
+namespace Tests\Unit\Assertions;
 
-class AssertionsTest extends \Codeception\Test\Unit
+class AssertionsTest extends \Tests\Unit\ABaseUnitTest
 {
     public function testFnEven()
     {
